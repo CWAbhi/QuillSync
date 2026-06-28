@@ -15,6 +15,11 @@ Install React Router DOM:
 npm install react-router-dom
 ```
 
+Install Lucid-react:
+```bash
+npm install lucide-react
+```
+
 ## Running the Development Server
 
 Start the development server:
