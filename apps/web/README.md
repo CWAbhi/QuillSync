@@ -19,6 +19,11 @@ Install Tailwind CSS :
 npm install tailwindcss @tailwindcss/vite
 ```
 
+Install Lucid-react:
+```bash
+npm install lucide-react
+```
+
 ## Running the Development Server
 
 Start the development server:
