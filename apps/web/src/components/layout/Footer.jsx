@@ -20,7 +20,7 @@ export default function Footer() {
             <a
               href="https://github.com/CWAbhi/QuillSync"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="hover:text-indigo-600 transition"
             >
               GitHub
