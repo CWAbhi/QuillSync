@@ -24,6 +24,11 @@ Install Lucid-react:
 npm install lucide-react
 ```
 
+Install next-auth :
+```bash
+npm install next-auth
+```
+
 ## Running the Development Server
 
 Start the development server:

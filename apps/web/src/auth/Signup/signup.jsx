@@ -2,8 +2,10 @@ import {useState} from 'react';
 import '../../styles/Signup.css';
 import { UserPlus ,CircleCheckBig } from "lucide-react"; 
 import { FcGoogle } from "react-icons/fc";
+import {Link,useNavigate} from 'react-router-dom';
+import AuthLayout from '../layout';
 
-export default function Signup(){
+ function SignupForm(){
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     
@@ -18,7 +20,7 @@ export default function Signup(){
     const digit = /\d/.test(password);
 
 
-    return (<div style={{background:'url(/Signup.png)' , overflow:'hidden', backgroundSize:'cover', backgroundPosition:'center',backgroundRepeat:'no-repeat', margin:'0px',height:'100vh', width:'100vw'}} >
+    return (
     <div className="w-full max-w-2xl rounded-2xl bg-white/80  shadow-2xl border border-gray-400 px-10 py-6 mx-auto mt-7">
         
         <div>
@@ -68,8 +70,17 @@ export default function Signup(){
             <FcGoogle className='inline-block mr-2 bg-white rounded-4xl p-1' size={30}/> Sign up with
             Google</button>
 
-        <p className='text-center mt-2'>Already have an account ? <a href='/signin' className='text-indigo-700  text-'>Sign in</a></p>
+        <p className='text-center mt-2'>Already have an account ? <Link to={'/signin'} className='text-indigo-700 '>Sign in</Link></p>
 
     </div>
-    </div>)
+    );
+};
+
+
+export default function SignUp(){
+    return(
+        <AuthLayout>
+            <SignupForm/>
+        </AuthLayout>
+    )
 }

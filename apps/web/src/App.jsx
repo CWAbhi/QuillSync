@@ -1,6 +1,6 @@
-
+import Landing from "./app/Landing.jsx";
+import Signin from './auth/Signin/Signin.jsx'
 import Singup from './auth/Signup/signup.jsx';
-import Landing from "./pages/Landing";
 import { Routes,Route } from 'react-router-dom';
 
 export default function App() {
@@ -8,6 +8,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/signup" element={<Singup />} />
+        <Route path="/signin" element={<Signin />} />
       </Routes>
     );
   };
